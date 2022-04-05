@@ -5,7 +5,7 @@ import FilmList from "../components/FilmList";
 
 const FilmBox = ({}) => {
 
-    const [name, url] = useState(
+    const [films, setFilms] = useState(
     
         [
         {
@@ -34,17 +34,18 @@ const FilmBox = ({}) => {
         url: "https://www.imdb.com/title/tt4154664/?ref_=rlm"
         }
         ]
-    )
+    );
     
         return(
-            <>
-            <h1>New Releases</h1>
-            <FilmList name={name}/>
-            <h2>URL</h2>
-            <FilmList url={url} />
-            </>
-        )
+            <div id = "film-box">
+            <h1>Upcoming Film Releases in the UK</h1>
+            <ul>
+            <FilmList films={films}/>
+            </ul>
+            <button><a href="https://www.imdb.com/calendar/?region=gb">View More Upcoming Releases</a></button>
+            </div>
+        );
     
-    }
+    };
     
     export default FilmBox;

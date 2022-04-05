@@ -1,3 +1,24 @@
+#film-box {
+  border: 3px solid black;
+  padding: 15px;
+  width: 50%;
+  margin:auto;
+  margin-top:250px;
+
+}
+
+#film-box button {
+  padding: 20px;
+  font-size: 25px;
+  background-color: lightblue;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+
 .App {
   text-align: center;
 }

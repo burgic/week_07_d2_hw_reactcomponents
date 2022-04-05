@@ -15,6 +15,6 @@ const FilmList = ({films}) => {
         </>
     );
 
-}
+};
 
 export default FilmList;
